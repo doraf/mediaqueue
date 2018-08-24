@@ -1,0 +1,227 @@
+/* universal */
+html{
+	background-color: #3e4442;
+	color: #fff;
+}
+
+a{
+	color: hotpink;
+	text-decoration: none;
+}
+
+p, li, input, textarea, select, dl{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: light;
+}
+
+h1, h2, h3, h4, h5, dt{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+}
+
+img{
+	width: 100%;
+}
+
+ul, p{
+	margin-top: 0;
+}
+
+/* entry */
+.entry{
+	padding: 25px 30px;
+	margin: 20px 40px;
+	background-color: #4b514f;
+	box-shadow: 1px 1px 2px #303332;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.entry.movie{
+	border-top: solid 6px hotpink;
+}
+
+.entry.movie a{
+	color: hotpink;
+}
+
+.entry.movie:before{
+	content: 'Movie';
+	color: hotpink;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.entry.series{
+	border-top: solid 6px limegreen;
+}
+
+.entry.series a{
+	color: limegreen;
+}
+
+.entry.series:before{
+	content: 'TV Series';
+	color: limegreen;
+	font-size: 28px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.entry h2{
+	font-size: 32px;
+	font-weight: 300;
+	margin-top: 3px;
+	text-shadow: 2px 2px #303332;
+}
+
+.entry h2.like:before{
+	content: "★";
+	text-shadow: none;
+	font-size: .8em;
+	color: #303332;
+	margin-right: 10px;
+	position: relative;
+	top: -3px;
+}
+
+.entry h2.dislike:before{
+	content: "▼";
+	text-shadow: none;
+	font-size: .8em;
+	color: #303332;
+	margin-right: 10px;
+	position: relative;
+	top: -3px;
+}
+
+.entry-data{
+	display: flex;
+}
+
+.entry-img{
+	margin: 0 20px 0 0;
+}
+
+.entry-img img{
+	box-shadow: 1px 1px 2px #303332;
+	width: 200px;
+}
+
+.entry-meta, .entry-img{
+	flex-basis: auto;
+}
+
+.entry-meta  ul{
+	padding: 0;
+	font-size: 14px;
+	color: #9fa5a2;
+	width: 175px;
+}
+
+.entry-meta  li{
+	list-style-type: none;
+	margin-bottom: 8px;
+}
+
+.entry-info{
+	margin-right: 20px;
+}
+
+.entry-info p{
+	color: #e1eae6;
+}
+
+.entry-info dl{
+	margin: 0 0 20px 0;
+}
+
+.entry-info dt{
+	font-size: 24px;
+	/*font-weight: 300;*/
+	color: #303332;
+}
+
+.entry-info dd{
+	margin: 0;
+	color: #e1eae6;
+}
+
+/* Form */
+
+.media-form{
+	background: #3e4442;
+	color: #fff;
+	padding: 50px 40px;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: solid 8px #303332;
+}
+
+.media-form h1{
+	font-size: 48px;
+}
+
+fieldset{
+	border: none;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 300;
+	color: #e1eae6;
+	font-size: 24px;
+	display: block;
+	text-align: center;
+}
+
+input, textarea{
+	width: 450px;
+	padding: 6px;
+	border: none;
+	font-size: 18px;
+	background-color: #4b514f;
+	color: #fff;
+	font-weight: light;
+}
+
+textarea{
+	height: 100px;
+}
+
+select{
+	width: 300px;
+	padding: 6px;
+	font-size: 18px;
+	border: none;
+	border-radius: 0;
+	background-color: #4b514f;
+	color: #fff;
+}
+
+button{
+	background-color: #3e4442;
+	border-radius: 10px;
+	border: solid 2px #9fa5a2;
+	font-size: 18px;
+	color: #e1eae6;
+	padding: 10px 40px;
+	margin: 30px 0 0;
+	transition: all .3s;
+}
+
+button:hover{
+	background-color: #6a726f;
+}
