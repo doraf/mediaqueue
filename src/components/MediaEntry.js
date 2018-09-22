@@ -18,7 +18,7 @@ class MediaEntry extends Component {
 
 	componentDidMount() {
 		// console.log(this.props.entry.title)
-		fetch(`http://www.omdbapi.com/?apikey=cad729d2&t=${this.props.entry.title}`)
+		fetch(`https://www.omdbapi.com/?apikey=cad729d2&t=${this.props.entry.title}`)
 			.then(response => response.json())
 		  .then(
 		    (data) => {
